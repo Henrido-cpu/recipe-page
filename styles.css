@@ -16,7 +16,7 @@
     }
 
     body{
-        background: var(--stone-150);
+        background: var(--stone-100);
         height:100vh;
         display:flex;
     }
@@ -39,6 +39,7 @@
 
     h1{
         margin-bottom: 10px;
+        font-size: 2.5rem;
     }
 
     h1, h2{
@@ -48,10 +49,11 @@
     }
 
     h2{
-        color: rgb(155, 94, 94)
+        color: var(--brown-800);
+        font-size: 1.5rem;
     }
-    p, li{
-        font-size:14px;
+    p, li, th, td{
+        font-size:16px;
         font-family: "Outfit", sans-serif;
         font-optical-sizing: auto;
         font-weight: 400;
@@ -62,32 +64,44 @@
         line-height:1.5;
     }
 
-    h1{
-        font-size: 2.0em;
-    }
-
     .attribution {
         font-size: 11px;
-        text-align: center; 
-        position:absolute;
-        bottom: 10px;
+        margin-bottom:-19px;
+        background: var(--rose-50);
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
+
     .attribution a {
-        color: hsl(228, 45%, 44%);
+        color: var(--rose-800);
+        padding:auto;
     }
 
     ul, ol{
-        margin-top: 10px;
-        margin-left: 20px;
+        margin-top: 15px;
+        margin-left: 23px;
     }
+
+    ul li::marker{
+        font-size:12px;
+    }
+
+    ol li::marker{
+        color:var(--rose-800);
+        font-weight: 700;
+    }
+
 
     li{
         margin-bottom: 7px;
     }
 
     li p{
-        margin-left: 10px;
+        margin-left: 15px;
     }
+    
+
 
     .preparation-time{
         background-color: var(--rose-50);
@@ -97,8 +111,49 @@
         margin-bottom: 20px;
     }
 
+    hr{
+        margin-top:30px;
+        margin-bottom:30px;
+    }
+
     .preparation-time h2{
         font-size: 1rem;
         color:var(--rose-800);
     }
 
+    span{
+        color:var(--stone-600);
+        font-weight:700;
+    }
+
+    table, th, td{
+        border-bottom: 1px solid var(--stone-150);
+        border-collapse:collapse;
+    }
+
+    th, td{
+        padding: 10px 0;
+    }
+
+    th{
+        padding-left:20px;
+        text-align: left;
+    }
+
+    td{
+        width:100%;
+        padding-left: 222px;
+        color:var(--brown-800);
+        font-weight:700;
+    }
+
+    tr:nth-last-of-type(1){
+        border-bottom: hidden;
+    }
+
+    footer h2{
+        margin-bottom: 12px;
+    }
+    footer p{
+        margin-bottom: 10px;
+    }
